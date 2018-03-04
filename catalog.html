@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <nav class="menu">
+        <ul class = "menu__list">
+          <li class="menu__item"><a href="#">Информация</a></li>
+          <li class="menu__item"><a href="#">Фото и видео</a></li>
+          <li class="menu__item"><a href="#">Карта штата</a></li>
+          <li class="menu__item"><a href="#">Гостиницы</a></li>
+        </ul>
+        <img class="menu__logo" src="http://placehold.it/150x100" alt="Логотип Седона" width="150" height="100">
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="hotel__filters">
+        <!-- форма для выбора условий отеля -->
+      </section>
+      <section class="hotel__selected">
+        <h2 class="hidden"> Найденные отели</h2>
+        <b>Найдено:</b>
+        <output>3</output>
+        <span>Сортировка:</span>
+        <ul class="hotel-sort__list">
+          <li class="hotel-sort__item"><button class="sort__button" type="button">по цене</button></li>
+          <li class="hotel-sort__item"><button class="sort__button" type="button">по типу</button></li>
+          <li class="hotel-sort__item"><button class="sort__button" type="button">по рейтингу</button></li>
+          <li class="hotel-sort__item"><button class="sort__button" type="button">по возрастанию</button></li>
+          <li class="hotel-sort__item"><button class="sort__button" type="button">по убыванию</button></li>
+        </ul>
+      </section>
+      <section class="hotels">
+        <ul class="hotels__list">
+          <li class="hotels__item">
+              <a href="#"><img src="http://placehold.it/150x100" alt="Amara Resort & Spa" width="150" height="100"></a>
+              <h4 class="hotels__item__title">Amara Resort & Spa</h4>
+              <p class="hotels__item__type">Гостиница</p>
+              <p class="hotels__item__price">От 4000 р.</p>
+              <a class="about__button" href="#">Подробнее</a>
+              <a class="rent__button" href="#">Забронировать</a>
+              <span class="stars"></span>
+              <p class="hotels__item__rating">Рейтинг: 8,5</p>
+          </li>
+          <li class="hotels__item">
+              <a href="#"><img src="http://placehold.it/150x100" alt="Desert Quil Inn" width="150" height="100"></a>
+              <h4 class="hotels__item__title">Desert Quil Inn</h4>
+              <p class="hotels__item__type">Мотель</p>
+              <p class="hotels__item__price">От 3000 р.</p>
+              <a class="about__button" href="#">Подробнее</a>
+              <a class="rent__button" href="#">Забронировать</a>
+              <span class="stars"></span>
+              <p class="hotels__item__rating">Рейтинг: 8,9</p>
+          </li>
+          <li class="hotels__item">
+              <a href="#"><img src="http://placehold.it/150x100" alt="Villas At Poco Diablo" width="150" height="100"></a>
+              <h4 class="hotels__item__title">Villas At Poco Diablo</h4>
+              <p class="hotels__item__type">Апартаменты</p>
+              <p class="hotels__item__price">От 2000 р.</p>
+              <a class="about__button" href="#">Подробнее</a>
+              <a class="rent__button" href="#">Забронировать</a>
+              <span class="stars"></span>
+              <p class="hotels__item__rating">Рейтинг: 9,2</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span class="hashtag">#visitsedona</span>
+      <ul class="social__list">
+        <li class="social__item"><a href="#">Twitter</a></li>
+        <li class="social__item"><a href="#">Facebook</a></li>
+        <li class="social__item"><a href="#">Youtube</a></li>
+      </ul>
+      <div class="copyright">
+        <a class="copyright__link" href="#"><span>Website by</span></a>
+      </div>
+    </footer>
+
+  </body>
+</html>
