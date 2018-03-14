@@ -29,8 +29,49 @@
     </header>
 
     <main class="main">
-      <section class="hotel__filters">
-        <!-- форма для выбора условий отеля -->
+      <section class="hotel-filters">
+        <form class="hotel-filters__form" method="post" action="https://echo.htmlacademy.ru">
+          <fieldset class="hotel-filters__section">
+            <legend class="hotel-filtes__title">Инфраструктура:</legend>
+            <div class="hotel-filters__checkbox">
+              <input id="filter__pool" type="checkbox" name="pool__item" checked>
+              <label class="catalog__label" for="filter__pool">Бассейн</label>
+            </div>
+            <div class="hotel-filters__checkbox">
+              <input id="filter__parking" type="checkbox" name="parking__item">
+              <label class="catalog__label" for="filter__parking">Парковка</label>
+            </div>
+            <div class="hotel-filters__checkbox">
+              <input id="filter__wifi" type="checkbox" name="wifi__item">
+              <label class="catalog__label" for="filter__wifi">Wi Fi</label>
+            </div>
+          </fieldset>
+          <fieldset class="hotel-filters__section">
+            <legend class="hotel-filtes__title">Тип жилья:</legend>
+            <div class="hotel-filters__checkbox">
+              <input id="filter__hotel" type="checkbox" name="hotel__item" checked>
+              <label class="catalog__label" for="filter__hotel">Гостиница</label>
+            </div>
+            <div class="hotel-filters__checkbox">
+              <input id="filter__motel" type="checkbox" name="motel__item" checked>
+              <label class="catalog__label" for="filter__motel">Мотель</label>
+            </div>
+            <div class="hotel-filters__checkbox">
+              <input id="filter__apart" type="checkbox" name="apart__item" checked>
+              <label class="catalog__label" for="filter__apart">Апартаменты</label>
+            </div>
+          </fieldset>
+          <fieldset class="hotel-filters__section">
+            <legend class="hotel-filtes__title">Стоимость в сутки:</legend>
+            <div class="hotel-filters__price-range">
+              <label class="catalog__label" for="filter-number__from-item">От</label>
+              <input id="filter-number__from-item"  type="number" name="number__from-item" placeholder='0'>
+              <label class="catalog__label" for="filter-number__before-item">До</label> 
+              <input id="filter-number__before-item" type="number" name="number__before-item" placeholder='3000'>
+              <input type="range">    
+            </div>
+           <button class="hotel-search__button" type="submit">Показать</button> 
+         </fieldset>
       </section>
       <section class="hotel__selected">
         <h2 class="hidden"> Найденные отели</h2>
