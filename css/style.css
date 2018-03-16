@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-menu__list{
+    font-weight: bold;
+	list-style: none;
+}
+
+.main-menu a {
+    color: #000000;
+}
+
+.main-menu a:hover {
+    color: #a3c7de;
+}
+
+.main-menu a:active {
+    color: #b2b2b2;
+}
+
+/*.main-menu .current {
+    color: #766357;
+}*/
+
+/*.promo__img {
+    background-image: url("../img/promo-mask.png"), url("../img/promo.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 100%, 0; 
+}
+*/
+.promo__title {
+	font-size:20px;
+}
+
+.promo__description {
+	font-size: 10px;
+	color:#b2b2b2;
+}
+
+.advantages__list {
+	list-style: none;
+}
+
+.advantages__item {
+    line-height: 21px;
+    background-color: #efefef;
+}
+
+.advantages__item h3 {
+    font-size: 21px;
+}
