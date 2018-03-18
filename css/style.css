@@ -177,3 +177,40 @@ input[type="text"]:focus {
 .plus:active {
     color: #82b5d3;
 }
+
+.hashtag {
+    font-size:21px;
+}
+
+.social__list{
+    list-style: none;
+}
+
+.social__item {
+    width: 46px;
+    height: 48px;
+    background-color: #82b5d3;
+}
+
+.twitter:hover {
+    background-color: #669fc2;
+}
+
+.twitter:active {
+    background-color: #5397be;
+}
+
+.facebook:hover {
+    background-color: #669fc2;
+}
+.facebook:active {
+    background-color: #5397be;
+}
+
+.youtube:hover {
+    background-color: #669fc2;
+}
+
+.youtube:active {
+    background-color: #5397be;
+}
