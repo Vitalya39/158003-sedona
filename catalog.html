@@ -36,14 +36,17 @@
           <fieldset class="hotel-filters__section">
             <legend class="hotel-filtes__title">Инфраструктура:</legend>
             <div class="hotel-filters__checkbox">
+              <img src="img/checkbox-on.svg">
               <input id="filter__pool" type="checkbox" name="pool__item" checked>
               <label class="catalog__label" for="filter__pool">Бассейн</label>
             </div>
             <div class="hotel-filters__checkbox">
+              <img src="img/checkbox-off.svg">
               <input id="filter__parking" type="checkbox" name="parking__item">
               <label class="catalog__label" for="filter__parking">Парковка</label>
             </div>
             <div class="hotel-filters__checkbox">
+              <img src="img/checkbox-off.svg">
               <input id="filter__wifi" type="checkbox" name="wifi__item">
               <label class="catalog__label" for="filter__wifi">Wi Fi</label>
             </div>
@@ -51,14 +54,17 @@
           <fieldset class="hotel-filters__section">
             <legend class="hotel-filtes__title">Тип жилья:</legend>
             <div class="hotel-filters__checkbox">
+              <img src="img/checkbox-on.svg">
               <input id="filter__hotel" type="checkbox" name="hotel__item" checked>
               <label class="catalog__label" for="filter__hotel">Гостиница</label>
             </div>
             <div class="hotel-filters__checkbox">
+              <img src="img/checkbox-on.svg">
               <input id="filter__motel" type="checkbox" name="motel__item" checked>
               <label class="catalog__label" for="filter__motel">Мотель</label>
             </div>
             <div class="hotel-filters__checkbox">
+              <img src="img/checkbox-on.svg">
               <input id="filter__apart" type="checkbox" name="apart__item" checked>
               <label class="catalog__label" for="filter__apart">Апартаменты</label>
             </div>
@@ -78,47 +84,57 @@
       </section>
       <section class="hotel__selected">
         <h2 class="hidden"> Найденные отели</h2>
-        <b>Найдено:</b>
-        <output>3</output>
+        <p>Найдено:3</p>
         <span>Сортировка:</span>
         <ul class="hotel-sort__list">
           <li class="hotel-sort__item"><a href="#">по цене</a></li>
           <li class="hotel-sort__item"><a href="#">по типу</a></li>
           <li class="hotel-sort__item"><a href="#">по рейтингу</a></li>
-          <li class="hotel-sort__item"><a href="#">по возрастанию</a></li>
-          <li class="hotel-sort__item"><a href="#">по убыванию</a></li>
+          <li class="hotel-sort__item triangle">
+            <a href="#">
+              <img src="img/icon-up-dir.svg" alt="increase">
+            </a>
+          </li>
+          <li class="hotel-sort__item triangle">
+            <a href="#">
+              <img src="img/icon-down-dir.svg" alt="increase">
+            </a>
+          </li>
         </ul>
       </section>
       <section class="hotels">
         <ul class="hotels__list">
           <li class="hotels__item">
-              <a href="#"><img src="img/hotel-1-preview.jpg" alt="Amara Resort & Spa" width="150" height="100"></a>
+              <a href="#"><img src="img/hotel-1-preview.jpg" alt="Amara Resort & Spa" width="135" height="90"></a>
               <h3 class="hotels__item__title">Amara Resort & Spa</h3>
               <p class="hotels__item__type">Гостиница</p>
               <p class="hotels__item__price">От 4000 р.</p>
-              <a class="about__button" href="#">Подробнее</a>
-              <a class="rent__button" href="#">Забронировать</a>
+              <a class="about__button button" href="#">Подробнее</a>
+              <a class="rent__button button" href="#">Забронировать</a>
               <span class="stars"></span>
+              <div class="stars star-4"></div>
               <p class="hotels__item__rating">Рейтинг: 8,5</p>
           </li>
           <li class="hotels__item">
-              <a href="#"><img src="img/hotel-2-preview.jpg" alt="Desert Quil Inn" width="150" height="100"></a>
+              <a href="#"><img src="img/hotel-2-preview.jpg" alt="Desert Quil Inn" width="135" height="90"></a>
               <h3 class="hotels__item__title">Desert Quil Inn</h3>
               <p class="hotels__item__type">Мотель</p>
               <p class="hotels__item__price">От 3000 р.</p>
-              <a class="about__button" href="#">Подробнее</a>
-              <a class="rent__button" href="#">Забронировать</a>
+              <a class="about__button button" href="#">Подробнее</a>
+              <a class="rent__button button" href="#">Забронировать</a>
               <span class="stars"></span>
+              <div class="stars star-3"></div>
               <p class="hotels__item__rating">Рейтинг: 8,9</p>
           </li>
           <li class="hotels__item">
-              <a href="#"><img src="img/hotel-3-preview.jpg" alt="Villas At Poco Diablo" width="150" height="100"></a>
+              <a href="#"><img src="img/hotel-3-preview.jpg" alt="Villas At Poco Diablo" width="135" height="90"></a>
               <h3 class="hotels__item__title">Villas At Poco Diablo</h3>
               <p class="hotels__item__type">Апартаменты</p>
               <p class="hotels__item__price">От 2000 р.</p>
-              <a class="about__button" href="#">Подробнее</a>
-              <a class="rent__button" href="#">Забронировать</a>
+              <a class="about__button button" href="#">Подробнее</a>
+              <a class="rent__button button" href="#">Забронировать</a>
               <span class="stars"></span>
+              <div class="stars star-2"></div>
               <p class="hotels__item__rating">Рейтинг: 9,2</p>
           </li>
         </ul>
@@ -128,13 +144,25 @@
     <footer class="footer">
       <span class="hashtag">#visitsedona</span>
       <ul class="social__list">
-        <li class="social__item"><a href="#">Twitter</a></li>
-        <li class="social__item"><a href="#">Facebook</a></li>
-        <li class="social__item"><a href="#">Youtube</a></li>
+        <li class="social__item twitter">
+          <a href="#">
+            <img src="img/twitter.svg" width="21" height="22" alt="twitter">
+          </a>
+        </li>
+        <li class="social__item facebook">
+          <a href="#">
+            <img src="img/fb-icon.svg" width="21" height="22" alt="facebook">
+          </a>
+        </li>
+        <li class="social__item youtube">
+          <a href="#">
+            <img src="img/youtube.svg" width="21" height="22" alt="youtube">
+          </a>
+        </li>
       </ul>
       <div class="footer__copyright">
         <b>Website by</b>
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
+        <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy logo">
         </a>
       </div>
