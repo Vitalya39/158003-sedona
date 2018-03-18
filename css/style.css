@@ -60,3 +60,12 @@ a {
 .advantages__item h3 {
     font-size: 21px;
 }
+
+.advantages__item.detailed {
+    background-color:#82b4d3;
+    color:white;
+}
+
+.non-list__advantages {
+    background-color: white;
+}
