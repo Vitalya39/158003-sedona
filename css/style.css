@@ -223,7 +223,6 @@ input[type="text"]:focus {
     background-color: #1e191a;
     background-image: url("../img/filter_background.jpg"); 
     background-repeat: no-repeat;
-
 }
 
 .hotel-filters legend {
@@ -238,6 +237,16 @@ input[type="text"]:focus {
 
 
 /*тут будут стили формы*/
+
+.hotel-search__button {
+    border: 2px solid #ffffff;
+    background: none;
+}
+
+.hotel-search__button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
 
 .hotel__selected  > p:first-of-type {
     font-size: 21px;
