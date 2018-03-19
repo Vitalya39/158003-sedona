@@ -7,171 +7,172 @@
   </head>
 
   <body>
-    <header class="header">
-      <nav class="main-menu">
-        <ul class ="main-menu__list">
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Информация</a>
+    <div class="main-containter">
+      <header class="header">
+        <nav class="main-menu">
+          <ul class ="main-menu__list">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Информация</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Фото и видео</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Карта штата</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <a class="main-menu__logo" href="#">
+            <img class="menu__logo" src="img/logo.png" alt="Sedona logo" width="138" height="70">
+          </a>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section class="promo">
+          <div class="main-banner">        
+            <img class="promo__img" src="img/promo.png" alt="Promo text" width="460" height="350">
+          </div>
+          <h1 class="promo__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="promo__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </section>
+        <section class="advantages">
+          <h2 class="hidden">Преимущества седоны</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item detailed">
+              <div>
+                <h2>Настоящий городок</h2>
+                <span>— №1 —</span>
+                <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+              </div>
+              <img src="img/advantage-1.jpg" alt="Town picture" width="800" height="256">
+            </li>
+            <li class="advantages__item detailed">
+              <div>
+                <h2>Там есть мост дьявола</h2>
+                <span>— №2 —</span>
+                <p>Да, но по нему можно пройти! Если , конечно, вы осмелитесь</p>
+              </div>
+              <img src="img/advantage-2.jpg" alt="Devils bridge" width="800" height="256">
+            </li>
+            <li class="advantages__item">
+              <div>
+                <h2>Небольшая площадь</h2>
+                <span>— №3 —</span>
+                <p>Все достопримечательности находятся очень близко</p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div>
+                <h2>Красивая дорога</h2>
+                <span>— №4 —</span>
+                <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div>
+                <h2>Мало туристов!</h2>
+                <span>— №5 —</span>
+                <p>Большинство едет в гранд-каньон и толпятся там</p>
+              </div>
+            </li>
+            <li class=advantages__item>
+              <ul class="non-list__advantages">
+                <li class="non-list__item">
+                  <div>
+                    <img src="img/icon-1.svg" alt="room">
+                    <h2>Жилье</h2>
+                    <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  </div>
+                </li>
+                <li class="non-list__item">
+                  <div>
+                    <img src="img/icon-3.svg" alt="food">
+                    <h2>Еда</h2>
+                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  </div>
+                </li>
+                <li class="non-list__item">
+                  <div>
+                    <img src="img/icon-2.svg" alt="souvenires">
+                    <h2>Сувениры</h2>
+                    <p>Не только китайского, но и местного производства!</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="search-hotels">
+          <h2 class="search-hotels__title">Занитересовались?</h2>
+          <p class="search-hotels__text">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <button class="button open-form">Поиск гостиницы в Седоне</button>
+          <form class="search-hotels__form" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="search-hotels__fieldset">
+              <div class="search-hotels__input">
+                <label class="search-hotels__label" for="arrival__date"> Дата заезда:</label>
+                <input id="arrival__date" type="date" name="arrival__date">
+                <button class="button calendar-button">
+                  <img src="img/calendar.svg" width="21" height="22" alt="calendar">
+                </button>
+              </div>
+              <div class="search-hotels__input">
+                <label class="search-hotels__label" for="departure__date"> Дата выезда:</label>
+                <input id="departure__date" type="date" name="departure__date">
+                <button class="button calendar-button">
+                  <img src="img/calendar.svg" width="21" height="22" alt="calendar">
+                </button>
+              </div>
+              <div class="search-hotels__input">
+                <label class="search-hotels__label" for="adults__amount"> Взрослые:</label>
+                <button class="button minus" aria-label="Меньше">-</button>
+                <input id="adults__amount" type="text" name="adults__amount" placeholder="2">
+                <button class="button plus" aria-label="Больше">+</button>
+              </div>
+              <div class="search-hotels__input">
+                <label class="search-hotels__label" for="children__amount"> Дети:</label>
+                <button class="button minus" aria-label="less">-</button>
+                <input id="children__amount" type="text" name="children__amount" placeholder="0">
+                <button class="button plus" aria-label="more">+</button>
+              </div>
+                <button class="button search-hotels__button" type="submit">Найти</button>
+            </fieldset>
+          </form>
+        </section>
+        <section class="map">
+          <h2 class="hidden">Карта</h2>
+          <img src="img/map.jpg" width="1200" height="593" alt="map">
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span class="hashtag">#visitsedona</span>
+        <ul class="social__list">
+          <li class="social__item twitter">
+            <a href="#">
+              <img src="img/twitter.svg" width="21" height="22" alt="twitter">
+            </a>
           </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Фото и видео</a>
+          <li class="social__item facebook">
+            <a href="#">
+              <img src="img/fb-icon.svg" width="21" height="22" alt="facebook">
+            </a>
           </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Карта штата</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="catalog.html">Гостиницы</a>
+          <li class="social__item youtube">
+            <a href="#">
+              <img src="img/youtube.svg" width="21" height="22" alt="youtube">
+            </a>
           </li>
         </ul>
-        <a class="main-menu__logo" href="#">
-          <img class="menu__logo" src="img/logo.png" alt="Sedona logo" width="138" height="70">
-        </a>
-      </nav>
-    </header>
-
-    <main class="main">
-      <section class="promo">
-        <div class="main-banner">        
-          <img class="promo__img" src="img/promo.png" alt="Promo text" width="460" height="350">
+        <div class="footer__copyright">
+          <b>Website by</b>
+          <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy logo">
+          </a>
         </div>
-        <h1 class="promo__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p class="promo__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      </section>
-      <section class="advantages">
-        <h2 class="hidden">Преимущества седоны</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item detailed">
-            <div>
-              <h2>Настоящий городок</h2>
-              <span>— №1 —</span>
-              <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
-            </div>
-            <img src="img/advantage-1.jpg" alt="Town picture" width="800" height="256">
-          </li>
-          <li class="advantages__item detailed">
-            <div>
-              <h2>Там есть мост дьявола</h2>
-              <span>— №2 —</span>
-              <p>Да, но по нему можно пройти! Если , конечно, вы осмелитесь</p>
-            </div>
-            <img src="img/advantage-2.jpg" alt="Devils bridge" width="800" height="256">
-          </li>
-          <li class="advantages__item">
-            <div>
-              <h2>Небольшая площадь</h2>
-              <span>— №3 —</span>
-              <p>Все достопримечательности находятся очень близко</p>
-            </div>
-          </li>
-          <li class="advantages__item">
-            <div>
-              <h2>Красивая дорога</h2>
-              <span>— №4 —</span>
-              <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
-            </div>
-          </li>
-          <li class="advantages__item">
-            <div>
-              <h2>Мало туристов!</h2>
-              <span>— №5 —</span>
-              <p>Большинство едет в гранд-каньон и толпятся там</p>
-            </div>
-          </li>
-          <li class=advantages__item>
-            <ul class="non-list__advantages">
-              <li class="non-list__item">
-                <div>
-                  <img src="img/icon-1.svg" alt="room">
-                  <h2>Жилье</h2>
-                  <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                </div>
-              </li>
-              <li class="non-list__item">
-                <div>
-                  <img src="img/icon-3.svg" alt="food">
-                  <h2>Еда</h2>
-                  <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </div>
-              </li>
-              <li class="non-list__item">
-                <div>
-                  <img src="img/icon-2.svg" alt="souvenires">
-                  <h2>Сувениры</h2>
-                  <p>Не только китайского, но и местного производства!</p>
-                </div>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-      <section class="search-hotels">
-        <h2 class="search-hotels__title">Занитересовались?</h2>
-        <p class="search-hotels__text">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="button open-form">Поиск гостиницы в Седоне</button>
-        <form class="search-hotels__form" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="search-hotels__fieldset">
-            <div class="search-hotels__input">
-              <label class="search-hotels__label" for="arrival__date"> Дата заезда:</label>
-              <input id="arrival__date" type="date" name="arrival__date">
-              <button class="button calendar-button">
-                <img src="img/calendar.svg" width="21" height="22" alt="calendar">
-              </button>
-            </div>
-            <div class="search-hotels__input">
-              <label class="search-hotels__label" for="departure__date"> Дата выезда:</label>
-              <input id="departure__date" type="date" name="departure__date">
-              <button class="button calendar-button">
-                <img src="img/calendar.svg" width="21" height="22" alt="calendar">
-              </button>
-            </div>
-            <div class="search-hotels__input">
-              <label class="search-hotels__label" for="adults__amount"> Взрослые:</label>
-              <button class="button minus" aria-label="Меньше">-</button>
-              <input id="adults__amount" type="text" name="adults__amount" placeholder="2">
-              <button class="button plus" aria-label="Больше">+</button>
-            </div>
-            <div class="search-hotels__input">
-              <label class="search-hotels__label" for="children__amount"> Дети:</label>
-              <button class="button minus" aria-label="less">-</button>
-              <input id="children__amount" type="text" name="children__amount" placeholder="0">
-              <button class="button plus" aria-label="more">+</button>
-            </div>
-              <button class="button search-hotels__button" type="submit">Найти</button>
-          </fieldset>
-        </form>
-      </section>
-      <section class="map">
-        <h2 class="hidden">Карта</h2>
-        <img src="img/map.jpg" width="1200" height="593" alt="map">
-      </section>
-    </main>
-
-    <footer class="footer">
-      <span class="hashtag">#visitsedona</span>
-      <ul class="social__list">
-        <li class="social__item twitter">
-          <a href="#">
-            <img src="img/twitter.svg" width="21" height="22" alt="twitter">
-          </a>
-        </li>
-        <li class="social__item facebook">
-          <a href="#">
-            <img src="img/fb-icon.svg" width="21" height="22" alt="facebook">
-          </a>
-        </li>
-        <li class="social__item youtube">
-          <a href="#">
-            <img src="img/youtube.svg" width="21" height="22" alt="youtube">
-          </a>
-        </li>
-      </ul>
-      <div class="footer__copyright">
-        <b>Website by</b>
-        <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy logo">
-        </a>
-      </div>
-    </footer>
-
+      </footer>
+    </div>
   </body>
 </html>

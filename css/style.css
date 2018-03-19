@@ -343,5 +343,48 @@ input[type="text"]:focus {
 .hotels__item__title:hover {
     color: #82b5d3;
 }
+
 .hotels__item__title:active {
     color: #b2b2b2;
+}
+
+/*Стили сетки*/
+
+.main-containter {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.main-menu {
+    display:flex;
+}
+
+.main-menu__list {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 73px;
+}
+
+
+.main-menu__item {
+    padding: 15px 0;
+    width: 240px;   
+}
+
+.main-menu__list li:first-child,
+.main-menu__list li:nth-child(2) {
+    text-align: left; 
+    background-color: yellow;  
+}
+
+.main-menu__list li:last-child, 
+.main-menu__list li:nth-last-child(2) {
+    text-align: right;   
+    background-color:red;
+}
+
+.main-menu__logo {
+    position: absolute;
+    left: calc(50% - 69px); 
+}
