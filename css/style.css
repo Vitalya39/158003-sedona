@@ -182,10 +182,6 @@ a {
     opacity: 1;
 }
 
-/*.calendar-button:active {
-   fill: #81b3d2; требуется вставлять свг в хтмл код?
-}*/ 
-
 .minus {
     font-size: 21px;
     font-weight: bold;
@@ -329,7 +325,6 @@ a {
     list-style: none;
 }
 
-}
 .hotels-list h3 {
     font-size: 21px;
     font-weight: bold;
@@ -398,8 +393,6 @@ a {
 .hotels__item__title:active {
     color: #b2b2b2;
 }
-
-/*Стили сетки*/
 
 .main-containter {
     width: 1200px;
