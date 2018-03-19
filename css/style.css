@@ -6,6 +6,7 @@ body {
     line-height: 26px;
     text-transform: uppercase;
     text-align: center;
+    background-color: #f2f2f2;
 }
 
 a {
@@ -13,11 +14,11 @@ a {
 }
 
 .visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
 
 .main-menu__list{
@@ -51,9 +52,6 @@ a {
     padding-top: 77px;
 }
 
-.advantages ul {
-    list-style:none;
-}
 
 .promo {
     margin-bottom: 56px;
@@ -66,9 +64,23 @@ a {
 }
 
 
+.advantages ul {
+    list-style:none;
+}
+
 .advantages__item {
     line-height: 21px;
     background-color: #efefef;
+}
+
+
+.advantages__description {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    height: 256px;
 }
 
 .advantages__item h3 {
@@ -76,16 +88,21 @@ a {
 }
 
 .advantages__item.detailed {
-    background-color:#82b4d3;
-    color:white;
+    background-color: #82b4d3;
+    color: #ffffff;
+}
+
+.advantages__item.detailed img {
+    width: 800px;
 }
 
 .non-list__advantages {
-    background-color: white;
+    background-color: #ffffff;
+    display: flex;
 }
 
 .search-hotels__title {
-    font-size:30px;
+    font-size: 30px;
 }
 
 .button {
@@ -393,17 +410,40 @@ input[type="text"]:focus {
 
 .main-menu__list li:first-child,
 .main-menu__list li:nth-child(2) {
-    text-align: left; 
-    background-color: yellow;  
+    text-align: left;  
 }
 
 .main-menu__list li:last-child, 
 .main-menu__list li:nth-last-child(2) {
     text-align: right;   
-    background-color:red;
 }
 
 .main-menu__logo {
     position: absolute;
     left: calc(50% - 69px); 
+}
+
+/*.advantages {
+    display:flex;
+    flex-wrap:wrap;
+}*/
+
+.advantages__list,
+.non-list__advantages {
+    display:flex;
+    flex-wrap:wrap;
+    margin:0;
+    padding:0;
+}
+
+.advantages__item {
+    display:flex;
+}
+
+.non-list__advantages {
+    height:330px;
+}
+
+.non-list__item div {
+    height:330px;
 }
