@@ -113,9 +113,8 @@ a {
     height: 510px;
     background-color: #5c87af;
     background-image: url("../img/promo-mask.png"), url("../img/promo-background.jpg");
-    background-position: 0 100%, 0; 
+    background-position: 0 bottom, 0 -56px; 
     background-repeat: no-repeat;
-    margin-bottom: 60px;
 }
 
 .promo__banner img {
@@ -125,7 +124,11 @@ a {
 .promo__title {
 	font-size: 21px;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-top: 57px;
+}
+
+.promo__description {
+    margin-top:27px;
 }
 
 /*СЕКЦИЯ С ПРИЧИНАМИ */
