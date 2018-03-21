@@ -29,6 +29,7 @@ a {
     width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
+    box-shadow: 0 0 10px 5px #dbdbdb;
 }
 
 /*ОБЩИЙ СТИЛЬ ДЛЯ КНОПОК И ЭЛЕМЕНТОВ ПОД НЕГО МАСКИРУЮЩИХСЯ*/
@@ -46,31 +47,42 @@ a {
 /*СТИЛИ ГЛАВНОГО МЕНЮ*/
 
 .main-menu {
-    display:flex;
+    display: flex;
+    margin: 0 auto;
 }
 
 .main-menu__list {
-    display: flex;
-    margin: 0 auto;
-    padding: 0 73px;
     font-weight: bold;
     list-style: none;
-}
-
-.main-menu__list li:first-child,
-.main-menu__list li:nth-child(2) {
-    text-align: left;  
-}
-
-.main-menu__list li:last-child, 
-.main-menu__list li:nth-last-child(2) {
-    text-align: right;   
+    display: flex;
+    width: 1200px;
+    margin: 0;
+    padding: 0 72px;
 }
 
 .main-menu__item {
-    padding: 15px 0;
-    width: 240px;   
+    width: 240px;
+    padding-top: 14px;
+    padding-bottom: 16px;
 }
+
+.main-menu__list li:first-child { 
+    text-align: left;
+}
+
+.main-menu__list li:nth-child(2) {
+    text-align: left;
+}
+
+.main-menu__list li:nth-child(3) {
+    text-align: right;
+    padding-left: 92px;
+}
+
+.main-menu__list li:last-child {
+    text-align: right;
+    padding-left: 4px;
+}  
 
 .main-menu a {
     color: #000000;
