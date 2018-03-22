@@ -112,37 +112,31 @@
           <p class="search-hotels__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="button open-form">Поиск гостиницы в Седоне</button>
           <form class="search-hotels__form" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset class="search-hotels__fieldset">
-              <div class="search-hotels__input">
-                <label class="search-hotels__label" for="arrival__date"> Дата заезда:</label>
-                <input id="arrival__date" type="date" name="arrival__date" class="form-input">
-                <button class="button calendar-button">
-                  <img src="img/calendar.svg" width="21" height="22" alt="calendar">
-                </button>
+              <div class="arrival__input">
+                <label class="search-hotels__arrival-label" for="arrival__date"> Дата заезда:</label>
+                <input id="arrival__date" type="date" name="arrival__date" class="form-input search-hotels__arrival-label">
               </div>
-              <div class="search-hotels__input">
+              <div class="departure__input">
                 <label class="search-hotels__label" for="departure__date"> Дата выезда:</label>
-                <input id="departure__date" type="date" name="departure__date" class="form-input">
-                <button class="button calendar-button">
-                  <img src="img/calendar.svg" width="21" height="22" alt="calendar">
-                </button>
+                <input id="departure__input" type="date" name="departure__date" class="form-input">
               </div>
-              <div class="search-hotels__input">
-                <label class="search-hotels__label" for="adults__amount"> Взрослые:</label>
-                <button class="button minus" aria-label="Меньше">-</button>
-                <input id="adults__amount" type="text" name="adults__amount" placeholder="2" class="form-input">
-                <button class="button plus" aria-label="Больше">+</button>
+              <div class="amount__input">
+                <div class="adults__input">
+                  <label class="search-hotels__label" for="adults__amount"> Взрослые:</label>
+                  <button class="button minus" aria-label="Меньше">-</button>
+                  <input id="adults__amount" type="text" name="adults__amount" placeholder="2" class="form-input">
+                  <button class="button plus" aria-label="Больше">+</button>
+                </div>
+                <div class="children__input">
+                  <label class="search-hotels__label" for="children__amount"> Дети:</label>
+                  <button class="button minus" aria-label="less">-</button>
+                  <input id="children__amount" type="text" name="children__amount" placeholder="0" class="form-input">
+                  <button class="button plus" aria-label="more">+</button>
+                </div>
               </div>
-              <div class="search-hotels__input">
-                <label class="search-hotels__label" for="children__amount"> Дети:</label>
-                <button class="button minus" aria-label="less">-</button>
-                <input id="children__amount" type="text" name="children__amount" placeholder="0" class="form-input">
-                <button class="button plus" aria-label="more">+</button>
-              </div>
-                <button class="button search-hotels__button" type="submit">Найти</button>
-            </fieldset>
+              <button class="button search-hotels__button" type="submit">Найти</button>
           </form>
-          <div class="map">
+          <div class="map" width="473px">
             <h2 class="visually-hidden">Карта</h2>
             <img src="img/map.jpg" width="1200" height="593" alt="map">
           </div>
