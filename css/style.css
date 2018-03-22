@@ -201,6 +201,10 @@ a {
 
 /*СЕКЦИЯ С ФОРМОЙ ПОИСКА*/
 
+.map {
+    height:473px;
+}
+
 .search-hotels {
     position: relative;
     margin:0 auto;
@@ -235,10 +239,60 @@ a {
     background-color: #ffffff;
 }
 
+.arrival__input,
+.departure__input {
+    text-align: left;
+    margin-bottom: 29px;
+}
+
+.search-hotels__form label {
+    vertical-align: middle;
+}
+
+.arrival__input input,
+.departure__input input {
+    width: 340px;
+    height: 35px;
+    margin-left: 16px;
+}
+
+.arrival__input input {
+    margin-left: 19px;
+}
+
+.amount__input {
+    display:flex;
+}
+
+.amount__input input {
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+.amount__input button {
+    width:38px;
+    height:38px;
+    margin:0;
+    padding:0;
+}
+
+.children__input {
+    margin-left: auto;
+}
+
+.adults__input label {
+    margin-right: 36px;
+}
+
 .search-hotels__button {
     background-color: #81b3d2;
     font-size: 21px;
     font-weight: bold;
+    margin-top: 54px;
+    width:100%;
+    padding:15px 0;
 }
 
 .search-hotels__button:hover {
@@ -329,7 +383,7 @@ a {
 
 .footer {
     position: relative;
-    bottom:125px;
+    z-index: 3;
     height:125px;
     background-color: rgba(255, 255, 255, 0.9);
     display: flex;
@@ -388,6 +442,38 @@ a {
 
 .footer__copyright {
     margin-left: 225px;
+}
+
+.copyright {
+  padding: 0;
+  margin: 0;
+  color: #000000;
+}
+
+.copyright span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.copyright svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.copyright:hover span{
+  color: #81b3d2;
+}
+
+.copyright:hover #svg{
+  fill: #81b3d2;
+}
+
+.copyright:active span {
+  color: #bdbbbc;
+}
+
+.copyright:active #svg {
+  fill: #bdbbbc;
 }
 
 /*СТИЛИ ДЛЯ СТРАНИЦЫ CATALOG.HTML*/
