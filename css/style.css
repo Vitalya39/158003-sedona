@@ -118,7 +118,7 @@ a {
 }
 
 .promo__title {
-	font-size: 21px;
+    font-size: 21px;
     font-weight: bold;
     margin-top: 60px;
 }
@@ -415,28 +415,30 @@ a {
     margin-right: 7px;
 }
 
-.twitter:hover {
-    background-color: #669fc2;
+.twitter svg,
+.facebook svg,
+.youtube svg {
+    margin-top: 10px;
 }
 
-.twitter:active {
-    background-color: #5397be;
-}
-
-.facebook:hover {
-    background-color: #669fc2;
-}
-.facebook:active {
-    background-color: #5397be;
-}
-
+.twitter:hover,
+.facebook:hover,
 .youtube:hover {
     background-color: #669fc2;
 }
 
+.twitter:active,
+.facebook:active,
 .youtube:active {
     background-color: #5397be;
 }
+
+.twitter:active path,
+.facebook:active path,
+.youtube:active path {
+    fill: #82b5d3;
+}
+
 
 /* CТИЛИ БЛОКА КОПИРАЙТ */
 
@@ -450,21 +452,17 @@ a {
   color: #000000;
 }
 
-.copyright span {
-  display: inline-block;
-  vertical-align: middle;
-}
-
+.copyright span,
 .copyright svg {
   display: inline-block;
   vertical-align: middle;
 }
 
-.copyright:hover span{
+.copyright:hover span {
   color: #81b3d2;
 }
 
-.copyright:hover #svg{
+.copyright:hover path {
   fill: #81b3d2;
 }
 
@@ -472,7 +470,7 @@ a {
   color: #bdbbbc;
 }
 
-.copyright:active #svg {
+.copyright:active path {
   fill: #bdbbbc;
 }
 
@@ -510,14 +508,18 @@ a {
     color: #000000;
 }
 
-/* БЛОК С ДОП.ПУНКТАМИ СОРТИРОВКИ */
+/* БЛОК С ВЫБОРОМ СПОСОБОВ ОТОБРАЖЕНИЯ ОТЕЛЕЙ */
+
+.hotel-sort__list {
+    width: 100%;
+}
 
 .hotel__selected {
     display: flex;
     align-items: baseline;
     width: 1056px;
     margin: 30px auto;
-    padding:0;
+    padding: 0;
 }
 
 .hotel__selected p {
@@ -532,29 +534,66 @@ a {
 }
 
 .hotel-sort__list {
-    display:flex;
-    list-style: none;
-    padding:0;
-    margin-left: 43px;
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
 
-.hotel-sort__item {
+.sort__types {
+    list-style: none;
+}
+
+.sort-type__item {
+    display: inline-block;
     margin-left: 33px;
 }
 
-.hotel-sort__item a {
+.sort-type__item.active a {
+    color: #82b5d3;
+    border: none;
+}
+
+.sort-type__item a {
     font-size: 12px;
     line-height: 18px;
     border-bottom: 1px dotted #82b5d3;
     color:#b2b2b2;
 }
-.hotel-sort__item a:hover {
+
+.sort-type__item a:hover {
     color: #92bed9;
 }
-.hotel-sort__item a:active {
+
+.sort-type__item a:active {
     color: #000000;
     border-bottom: none;
 }
+
+.hotel-sort__way {
+    list-style: none;
+    margin-left: auto;
+}
+
+.sort-way__item {
+    display: inline-block;
+}
+
+.hotel-sort__way li:last-child {
+    margin-left: 15px;
+}
+
+.sort-way__item path {
+    fill: grey;
+}
+
+.sort-way__item:hover path {
+    fill: black;
+}
+
+.sort-way__item:active path {
+    fill: #92bed9
+}
+
 
 /* СЕКЦИЯ С НАЙДЕННЫМИ ОТЕЛЯМИ */
 
@@ -582,13 +621,6 @@ a {
     margin-left: 30px;
 }
 
-.hotels__item-main p {
-    line-height: 21px;
-    margin: 0;
-    padding: 0;
-/*    display: inline-block;*/
-}
-
 .hotels__item-title {
     font-size: 21px;
     font-weight: bold;
@@ -604,9 +636,25 @@ a {
     color: #b2b2b2;
 }
 
+.hotel__item-text {
+    display: flex;
+    width: 200px;
+    margin-bottom: 8px;
+}
+
+
+.hotel__item-text p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.hotels__item-price {
+    margin-left: auto;
+}
+
 .about__button {
     background-color: #81b3d2;
-    font-size: 21px;
+    font-size: 14px;
     font-weight: bold;
     padding:6px 14px;
 }
@@ -621,7 +669,7 @@ a {
 }
 
 .rent__button {
-    font-size: 21px;
+    font-size: 14px;
     font-weight: bold;
     padding:6px 14px;
 }
