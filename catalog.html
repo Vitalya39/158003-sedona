@@ -72,14 +72,19 @@
                 <label class="catalog__label" for="filter__apart">Апартаменты</label>
               </div>
             </fieldset>
-            <fieldset class="hotel-filters__section">
-              <legend class="hotel-filtes__title">Стоимость в сутки:</legend>
+            <fieldset class="hotel-filters__section set-price">
+              <legend class="hotel-filtes__title">Стоимость в сутки (Р):</legend>
               <div class="hotel-filters__price-range">
-                <label class="catalog__label" for="filter-number__from-item">От</label>
-                <input id="filter-number__from-item"  type="number" name="number__from-item" placeholder='0'>
-                <label class="catalog__label" for="filter-number__before-item">До</label> 
-                <input id="filter-number__before-item" type="number" name="number__before-item" placeholder='3000'>
-                <input type="range">    
+                <label class="catalog__label" for="filter-number__from-item">От <input id="filter-number__from-item"  type="number" name="number__from-item" placeholder='0'></label>
+                <label class="catalog__label" for="filter-number__before-item">До <input id="filter-number__before-item" type="number" name="number__before-item" placeholder='3000'></label>   
+              </div>
+              <div class="hotel-filters__price-contorls">
+                <p class="visually-hidden">Ползунок</p>
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
               </div>
              <button class="button hotel-search__button" type="submit">Показать</button> 
            </fieldset>

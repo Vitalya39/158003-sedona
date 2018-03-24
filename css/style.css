@@ -265,8 +265,8 @@ a {
 }
 
 .amount__input input {
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
     margin: 0;
     padding: 0;
 }
@@ -280,6 +280,12 @@ a {
 
 .children__input {
     margin-left: auto;
+}
+
+.children__input,
+.adults__input {
+    display: flex;
+    justify-content: center;
 }
 
 .adults__input label {
@@ -488,24 +494,143 @@ a {
 
 /*СТИЛИ ФОРМЫ*/
 
+.hotel-filters__form {
+    display: flex;
+    padding: 30px 70px 25px;
+}
+
+.hotel-filters__form fieldset:first-child {
+    margin-right: 60px;
+}
+
+
+.hotel-filters__section {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*СЛОЖНАЯ ФОРМА*/
+.hotel-filters__section.set-price {
+    margin-left:auto;
+    width: 330px;
+}
+
+.hotel-filters__section.set-price legend {
+    margin-bottom: 9px;
+}
+
+.hotel-filters__price-range {
+    position: relative;
+    height: 36px;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    font-size: 0;
+}
+
+.hotel-filters__price-range::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+.hotel-filters__price-range label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+    cursor: pointer;
+    width: 90px;
+    padding-left: 65px;
+}
+
+.hotel-filters__price-range input {
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+}
+
+.hotel-filters__price-contorls {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.hotel-filters__price-contorls .scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-filters__price-contorls .bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 80%;
+}
+
+.hotel-filters__checkbox {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
 .hotel-filters legend {
     font-size: 16px;
     font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px
 }
-
 
 .hotel-filters input[type="checkbox"] {
     opacity: 0;
 }
 
 .hotel-search__button {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: transparent;
     border: 2px solid #ffffff;
-    background: none;
-}
+    border-radius: 2px;
+    cursor: pointer;}
 
 .hotel-search__button:hover {
-    background-color: #ffffff;
     color: #000000;
+    background: #ffffff;
 }
 
 /* БЛОК С ВЫБОРОМ СПОСОБОВ ОТОБРАЖЕНИЯ ОТЕЛЕЙ */
