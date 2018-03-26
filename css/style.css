@@ -198,7 +198,6 @@ a {
 }
 
 
-
 /*СЕКЦИЯ С ФОРМОЙ ПОИСКА*/
 
 .map {
@@ -221,94 +220,7 @@ a {
     margin-bottom: 0;
 }
 
-.search-hotels label {
-    font-weight: bold;
-}
-
 /*СТИЛИ ФОРМЫ В БЛОКЕ ПОИСКА*/
-
-.search-hotels__form {
-    position: absolute;
-    left: 0;
-    right: 0;
-    border: 0px;
-    margin: 0 auto;
-    padding: 55px;
-    width: 458px;
-    min-height: 285px;
-    background-color: #ffffff;
-}
-
-.arrival__input,
-.departure__input {
-    text-align: left;
-    margin-bottom: 29px;
-}
-
-.search-hotels__form label {
-    vertical-align: middle;
-}
-
-.arrival__input input,
-.departure__input input {
-    width: 340px;
-    height: 35px;
-    margin-left: 16px;
-}
-
-.arrival__input input {
-    margin-left: 19px;
-}
-
-.amount__input {
-    display:flex;
-}
-
-.amount__input input {
-    width: 34px;
-    height: 34px;
-    margin: 0;
-    padding: 0;
-}
-
-.amount__input button {
-    width:38px;
-    height:38px;
-    margin:0;
-    padding:0;
-}
-
-.children__input {
-    margin-left: auto;
-}
-
-.children__input,
-.adults__input {
-    display: flex;
-    justify-content: center;
-}
-
-.adults__input label {
-    margin-right: 36px;
-}
-
-.search-hotels__button {
-    background-color: #81b3d2;
-    font-size: 21px;
-    font-weight: bold;
-    margin-top: 54px;
-    width:100%;
-    padding:15px 0;
-}
-
-.search-hotels__button:hover {
-    background-color: #669ec0;
-}
-
-.search-hotels__button:active {
-    color: #88b6d1;
-    background-color: #5496bd;
-}
 
 .open-form {
     padding: 29px 140px;
@@ -327,10 +239,38 @@ a {
     background-color: #503e33;
 }
 
+.search-hotels__form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    border: 0px;
+    margin: 0 auto;
+    padding: 55px;
+    width: 458px;
+    min-height: 285px;
+    background-color: #ffffff;
+}
+
+.arrival,
+.departure {
+    margin-bottom: 29px;
+    position: relative;
+    display:flex;
+    align-items: center
+}
+
+.search-hotels__label {
+    vertical-align: middle;
+    font-weight: bold
+}
+
 .form-input {
     border: none;
     border: 2px solid #f3f3f3;
     background-color: #f3f3f3;
+    width: 340px;
+    height: 35px;
+    margin-left: auto;
 }
 
 .form-input:hover {
@@ -344,45 +284,87 @@ a {
     outline: none;
 }
 
-.calendar-button {
-    background-color: #ececec;
-    opacity: 0.4;
+.calendar__button {
+    position: absolute;
+    top: 9px;
+    right: 16px;
 }
 
-.calendar-button:hover {
-    opacity: 1;
+.calendar__button path {
+    fill: #a9a9a9;
 }
 
-.minus {
+.calendar__button:hover path {
+    fill: #000000;
+}
+
+.calendar__button:active path {
+    fill: #82b3d3;
+}
+
+.amount {
+    display: flex;
+}
+
+.children__amount,
+.adults__amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.children__amount {
+    margin-left: auto;
+}
+
+.amount__input {
+    width: 34px;
+    height: 38px;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.button.plus,
+.button.minus {
+    width:38px;
+    height:38px;
+    margin:0;
+    padding:0;
+    background-color: #f2f2f2;
     font-size: 21px;
     font-weight: bold;
+    color: #aaaaaa
+}
+
+.button.plus:hover,
+.button.minus:hover {
     color: #000000;
-    background-color: #ececec;
-    opacity: 0.4;
 }
 
-.minus:hover {
-    opacity: 1;
+.button.plus:active,
+.button.minus:active {
+    color: #82b5d3
 }
 
-.minus:active {
-    color: #82b5d3;
-}
 
-.plus {
+.search-hotels__button {
+    background-color: #81b3d2;
     font-size: 21px;
     font-weight: bold;
-    color: #000000;
-    background-color: #ececec;
-    opacity: 0.4;
+    margin-top: 54px;
+    width:100%;
+    padding:15px 0;
 }
 
-.plus:hover {
-    opacity: 1;
+.search-hotels__button:hover {
+    background-color: #669ec0;
 }
 
-.plus:active {
-    color: #82b5d3;
+.search-hotels__button:active {
+    color: #88b6d1;
+    background-color: #5496bd;
 }
 
 /*СТИЛИ ДЛЯ ЭЛЕМЕНТОВ ФУТЕРА*/
@@ -415,6 +397,7 @@ a {
 }
 
 .social__item {
+    position: relative;
     width: 46px;
     height: 48px;
     background-color: #82b5d3;
@@ -424,7 +407,9 @@ a {
 .twitter svg,
 .facebook svg,
 .youtube svg {
-    margin-top: 10px;
+    position:absolute;
+    bottom: 33%;
+    left: 33%;
 }
 
 .twitter:hover,
