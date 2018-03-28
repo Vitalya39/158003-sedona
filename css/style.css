@@ -245,7 +245,7 @@ a {
     right: 0;
     border: 0px;
     margin: 0 auto;
-    padding: 55px;
+    padding: 54px;
     width: 458px;
     min-height: 285px;
     background-color: #ffffff;
@@ -253,13 +253,14 @@ a {
 
 .arrival,
 .departure {
-    margin-bottom: 29px;
+    margin-bottom: 27px;
     position: relative;
     display:flex;
     align-items: center
 }
 
 .search-hotels__label {
+    font-size:14px;
     vertical-align: middle;
     font-weight: bold
 }
@@ -286,8 +287,8 @@ a {
 
 .calendar__button {
     position: absolute;
-    top: 9px;
-    right: 16px;
+    top: 10px;
+    right: 10px;
 }
 
 .calendar__button path {
@@ -304,6 +305,10 @@ a {
 
 .amount {
     display: flex;
+}
+
+.adults__amount label {
+    margin-right: 41px;
 }
 
 .children__amount,
@@ -324,6 +329,7 @@ a {
     padding: 0;
     background-color: #f2f2f2;
     border: none;
+    text-align:center;
 }
 
 .button.plus,
@@ -348,11 +354,15 @@ a {
     color: #82b5d3
 }
 
+.children__amount .button.minus {
+    margin-left: 30px;
+}
+
 .search-hotels__button {
     background-color: #81b3d2;
     font-size: 21px;
     font-weight: bold;
-    margin-top: 54px;
+    margin-top: 56px;
     width:100%;
     padding:15px 0;
 }
@@ -383,7 +393,8 @@ a {
     font-size: 21px;
     margin: 0;
     font-weight: bold;
-    margin-left: 130px;
+    margin-left: 132px;
+    margin-bottom: 8px;
 }
 
 /* CТИЛИ ИКОНОК СОЦ.СЕТЕЙ */
@@ -392,6 +403,7 @@ a {
     list-style: none;
     display: flex;
     margin-left: 256px;
+    margin-bottom: 17px;
     padding: 0;
 }
 
@@ -403,12 +415,22 @@ a {
     margin-right: 7px;
 }
 
-.twitter svg,
-.facebook svg,
-.youtube svg {
+.twitter svg {
     position:absolute;
     bottom: 33%;
     left: 33%;
+}
+
+.facebook svg {
+    position:absolute;
+    bottom: 29%;
+    left: 35%;
+}
+
+.youtube svg {
+    position:absolute;
+    bottom: 33%;
+    left: 27%;
 }
 
 .twitter:hover,
@@ -433,7 +455,8 @@ a {
 /* CТИЛИ БЛОКА КОПИРАЙТ */
 
 .footer__copyright {
-    margin-left: 225px;
+    margin-left: 220px;
+    margin-bottom: 4px;
 }
 
 .copyright {
@@ -442,22 +465,13 @@ a {
   color: #000000;
 }
 
-.copyright span,
 .copyright svg {
   display: inline-block;
   vertical-align: middle;
 }
 
-.copyright:hover span {
-  color: #81b3d2;
-}
-
 .copyright:hover path {
   fill: #81b3d2;
-}
-
-.copyright:active span {
-  color: #bdbbbc;
 }
 
 .copyright:active path {
