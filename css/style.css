@@ -364,7 +364,7 @@ a {
 
 .button.plus:active,
 .button.minus:active {
-    color: #82b5d3
+    color: #82b5d3;
 }
 
 .children__amount .button.minus {
@@ -463,7 +463,6 @@ a {
 .youtube:active path {
     fill: #82b5d3;
 }
-
 
 /* CТИЛИ БЛОКА КОПИРАЙТ */
 
