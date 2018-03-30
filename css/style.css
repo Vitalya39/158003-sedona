@@ -125,6 +125,7 @@ a {
     font-size: 21px;
     font-weight: bold;
     margin-top: 60px;
+    padding: 0 300px;
 }
 
 .promo__description {
@@ -163,11 +164,22 @@ a {
     padding-bottom: 24px;
 }
 
-
 .advantages__item p {
     padding-top: 21px;
     margin: 0;
     padding-bottom: 60px;
+    padding-left: 58px;
+    padding-right: 58px;
+}
+
+.advantages__list li:nth-child(3) p {
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.advantages__list li:first-child h2 {
+    padding-left: 93px;
+    padding-right: 93px;
 }
 
 .advantages__item.detailed {
@@ -178,7 +190,7 @@ a {
 
 .advantages__item.detailed img {
     width: 800px;
-    background-color: ##8B4513;
+    background-color: #8B4513;
 }
 
 .non-list__advantages {
@@ -199,7 +211,7 @@ a {
 }
 
 .non-list__item p {
-    padding-top: 0px;
+    padding: 0px 50px;
 }
 
 
@@ -271,14 +283,14 @@ a {
 }
 
 .form-input {
-    border: none;
     border: 2px solid #f3f3f3;
     background-color: #f3f3f3;
-    width: 330px;
-    height: 35px;
+    width: 355px;
+    box-sizing: border-box;
     margin-left: auto;
     font-weight: bold;
-    padding-left: 10px;
+    padding: 10px;
+    padding-left: 20px;
 }
 
 .form-input:hover {
@@ -294,7 +306,6 @@ a {
 
 .form-input::placeholder {
     color: #000000;
-    padding-left: 10px;
 } 
 
 .calendar__button {
@@ -320,7 +331,7 @@ a {
 }
 
 .adults__amount label {
-    margin-right: 41px;
+    margin-right: 32px;
 }
 
 .children__amount,
@@ -616,10 +627,12 @@ a {
 }
 
 .hotel-filters__checkbox {
+    position: relative;
     text-align: left;
     margin-bottom: 23px;
     display: flex;
     align-items: center;
+    padding-left: 30px;
 }
 
 .hotel-filters legend {
@@ -627,10 +640,27 @@ a {
     font-weight: bold;
     text-align: left;
     margin-bottom: 25px
+
 }
 
 .hotel-filters input[type="checkbox"] {
     opacity: 0;
+}
+
+.hz label::before {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 24px;
+  content: "";
+}
+
+.filter__checkbox::checked + label::before {
+  background-image: url(../img/checkbox-on.svg);
 }
 
 .hotel-search__button {
