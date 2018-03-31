@@ -13,6 +13,16 @@ a {
     text-decoration: none;
 }
 
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+ -webkit-appearance: none;
+ margin: 0;
+}
+
+input[type=number] {
+   -moz-appearance:textfield;
+}
+
 /*СТИЛЬ ДЛЯ НЕВИДИМЫХ БЛОКОВ*/
 
 .visually-hidden {
@@ -270,7 +280,7 @@ a {
 
 .arrival,
 .departure {
-    margin-bottom: 27px;
+    margin-bottom: 28px;
     position: relative;
     display:flex;
     align-items: center
@@ -285,12 +295,12 @@ a {
 .form-input {
     border: 2px solid #f3f3f3;
     background-color: #f3f3f3;
-    width: 355px;
+    width: 346px;
     box-sizing: border-box;
     margin-left: auto;
     font-weight: bold;
     padding: 10px;
-    padding-left: 20px;
+    padding-left: 12px;
 }
 
 .form-input:hover {
@@ -331,7 +341,7 @@ a {
 }
 
 .adults__amount label {
-    margin-right: 32px;
+    margin-right: 41px;
 }
 
 .children__amount,
@@ -427,7 +437,6 @@ a {
     list-style: none;
     display: flex;
     margin-left: 256px;
-    margin-bottom: 17px;
     padding: 0;
 }
 
@@ -475,6 +484,8 @@ a {
     fill: #82b5d3;
 }
 
+
+
 /* CТИЛИ БЛОКА КОПИРАЙТ */
 
 .footer__copyright {
@@ -517,7 +528,7 @@ a {
 
 .hotel-filters__form {
     display: flex;
-    padding: 27px 70px 7px;
+    padding: 27px 70px 12px;
 }
 
 .hotel-filters__form fieldset:first-child {
@@ -584,6 +595,14 @@ a {
     font: inherit;
     background: none;
     border: none;
+
+}
+
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button {
+    display: none; 
+    -webkit-appearance: none;
+    margin: 0; 
 }
 
 .hotel-filters__price-contorls {
@@ -657,6 +676,11 @@ a {
   width: 27px;
   height: 24px;
   content: "";
+}
+
+.filter__checkbox:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .filter__checkbox:checked + label::before {
