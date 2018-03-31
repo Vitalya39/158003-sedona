@@ -202,7 +202,7 @@ a {
     background-color: #ffffff;
 }
 
-.non-list__item img{
+.non-list__item svg{
     padding-top: 58px;
 }
 
@@ -647,7 +647,7 @@ a {
     opacity: 0;
 }
 
-.hz label::before {
+.checkbox label::before {
   position: absolute;
   display: block;
   top: 0;
@@ -659,7 +659,7 @@ a {
   content: "";
 }
 
-.filter__checkbox::checked + label::before {
+.filter__checkbox:checked + label::before {
   background-image: url(../img/checkbox-on.svg);
 }
 
