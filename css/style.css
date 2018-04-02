@@ -520,12 +520,13 @@ input[type=number] {
 /* СТИЛИ ДЛЯ СЕКЦИИ С ФИЛЬТРАМИ ПОИСКА */
 
 .hotel-filters {
-    line-height: 21px;
-    color: #ffffff;
     background-image: url("../img/filter_background.jpg"); 
+    background-color: #1e191a;
     background-repeat: no-repeat;
     background-position: 42%;
-    width:100%;
+    line-height: 21px;
+    color: #ffffff;
+    width: 100%;
 }
 
 /*СТИЛИ ФОРМЫ*/
