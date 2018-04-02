@@ -15,12 +15,13 @@ a {
 
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
- -webkit-appearance: none;
- margin: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
 }
 
 input[type=number] {
-   -moz-appearance:textfield;
+   -moz-appearance: textfield;
 }
 
 /*СТИЛЬ ДЛЯ НЕВИДИМЫХ БЛОКОВ*/
@@ -489,8 +490,6 @@ input[type=number] {
     fill: #82b5d3;
 }
 
-
-
 /* CТИЛИ БЛОКА КОПИРАЙТ */
 
 .footer__copyright {
@@ -499,22 +498,22 @@ input[type=number] {
 }
 
 .copyright {
-  padding: 0;
-  margin: 0;
-  color: #000000;
+    padding: 0;
+    margin: 0;
+    color: #000000;
 }
 
 .copyright svg {
-  display: inline-block;
-  vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .copyright:hover path {
-  fill: #81b3d2;
+    fill: #81b3d2;
 }
 
 .copyright:active path {
-  fill: #bdbbbc;
+    fill: #bdbbbc;
 }
 
 /*СТИЛИ ДЛЯ СТРАНИЦЫ CATALOG.HTML*/
@@ -605,8 +604,9 @@ input[type=number] {
 
  input::-webkit-outer-spin-button,
  input::-webkit-inner-spin-button {
-    display: none; 
     -webkit-appearance: none;
+    appearance: none;
+    display: none; 
     margin: 0; 
 }
 
