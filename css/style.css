@@ -180,8 +180,8 @@ input[type=number] {
     padding-top: 21px;
     margin: 0;
     padding-bottom: 60px;
-    padding-left: 58px;
-    padding-right: 58px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .advantages__list li:nth-child(3) p {
@@ -937,4 +937,26 @@ input[type=number] {
     padding: 0px 14px;
 }
 
+/*АНИМАЦИИ ФОРМЫ*/
 
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+
+    70% {
+        transform: translateY(30px);
+    }
+
+    90% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.form-bounce {
+    animation: bounce 2s;
+}

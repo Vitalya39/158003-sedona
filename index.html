@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet"> 
-    <link href="css/style.css" rel="stylesheet"> 
+    <link href="css/style-min.css" rel="stylesheet"> 
   </head>
 
   <body>
@@ -35,7 +35,7 @@
       <main class="main">
         <section class="promo">
           <div class="promo__banner">        
-            <img class="promo__img" src="img/promo.png" alt="Promo-text" width="458px" height="352px">
+            <img class="promo__img" src="img/promo.png" alt="Promo-text" width="458" height="352">
           </div>
           <h1 class="promo__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p class="promo__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -111,7 +111,7 @@
           <h2 class="search-hotels__title">Заинтересовались?</h2>
           <p class="search-hotels__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="button open-form">Поиск гостиницы в Седоне</button>
-          <form class="search-hotels__form" method="get" action="https://echo.htmlacademy.ru">
+          <form class="search-hotels__form visually-hidden" method="get" action="https://echo.htmlacademy.ru">
               <div class="arrival">
                 <label class="search-hotels__label" for="arrival__input"> Дата заезда:</label>
                 <input id="arrival__input" type="text" name="arrival__date" class="form-input" placeholder="24 АПРЕЛЯ 2017">
@@ -145,7 +145,7 @@
               <button class="button search-hotels__button" type="submit">Найти</button>
           </form>
           <div class="map">
-    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184373.68305187553!2d-111.76698414575415!3d34.83143836138692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1522155055724" width="1200" height="593" style="border:0"></iframe>
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184373.68305187553!2d-111.76698414575415!3d34.83143836138692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1522155055724" width="1200" height="593" style="border:0"></iframe>
           </div>
         </section>
       </main>
@@ -174,5 +174,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/main-min.js"></script>
   </body>
 </html>
