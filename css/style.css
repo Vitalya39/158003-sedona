@@ -581,7 +581,7 @@ input[type=number] {
     display: inline-block;
     vertical-align: top;
     font-size: 14px;
-    line-height: 38px;
+    line-height: 32px;
     cursor: pointer;
     width: 90px;
     padding-left:45px;
@@ -691,6 +691,14 @@ input[type=number] {
 
 .filter__checkbox:checked + label::before {
     background-image: url(../img/checkbox-on.svg);
+}
+
+.filter__checkbox:disabled + label::before {
+    background-image: url(../img/checkbox-off-disabled.svg);
+}
+
+.filter__checkbox:checked:disabled + label::before {
+    background-image: url(../img/checkbox-on-disabled.svg);
 }
 
 .hotel-search__button {
