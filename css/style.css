@@ -721,10 +721,10 @@ input[type=number] {
 
 .hotel__selected {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
-    width: 1056px;
     margin: 17px auto;
-    padding: 0;
+    padding: 0 72px;
 }
 
 .hotel__selected p {
@@ -794,6 +794,9 @@ input[type=number] {
     fill: #92bed9
 }
 
+.sort-way__item.active path {
+    fill: #92bed9
+}
 
 /* СЕКЦИЯ С НАЙДЕННЫМИ ОТЕЛЯМИ */
 
