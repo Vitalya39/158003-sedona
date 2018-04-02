@@ -200,6 +200,7 @@ input[type=number] {
 
 .advantages__item.detailed img {
     width: 800px;
+    height: 100%;
     background-color: #8B4513;
 }
 
@@ -208,7 +209,7 @@ input[type=number] {
 }
 
 .non-list__item div {
-    min-height:330px;
+    height: 100%;
     background-color: #ffffff;
 }
 
@@ -221,7 +222,10 @@ input[type=number] {
 }
 
 .non-list__item p {
-    padding: 0px 50px;
+    padding-left: 50px;
+    padding-top: 0px;
+    padding-right: 50px;
+    padding-bottom: 83px;
 }
 
 
@@ -849,6 +853,7 @@ input[type=number] {
 .hotel__item-text p {
     margin-top: 0;
     margin-bottom: 0;
+    max-width: 110px;
 }
 
 .hotels__item-price {
