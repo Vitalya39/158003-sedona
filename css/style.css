@@ -44,6 +44,7 @@ input[type=number] {
     width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
+    -webkit-box-shadow: 0 0 10px 5px #dbdbdb;
     box-shadow: 0 0 10px 5px #dbdbdb;
 }
 
@@ -62,15 +63,19 @@ input[type=number] {
 /*СТИЛИ ГЛАВНОГО МЕНЮ*/
 
 .main-menu {
-    display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
     position: relative;
     margin: 0 auto;
 }
 
 .main-menu__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
     font-weight: bold;
     list-style: none;
-    display: flex;
     width: 1200px;
     margin: 0;
     padding: 0 72px;
@@ -153,7 +158,9 @@ input[type=number] {
 .advantages__list,
 .non-list__advantages {
     list-style: none;
-    display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
@@ -195,7 +202,9 @@ input[type=number] {
 }
 
 .advantages__item.detailed {
-    display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
     background-color: #82b4d3;
     color: #ffffff;
 }
@@ -207,7 +216,10 @@ input[type=number] {
 }
 
 .non-list__advantages {
-    display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
 }
 
 .non-list__item div {
@@ -229,7 +241,6 @@ input[type=number] {
     padding-right: 50px;
     padding-bottom: 83px;
 }
-
 
 /*СЕКЦИЯ С ФОРМОЙ ПОИСКА*/
 
@@ -288,7 +299,9 @@ input[type=number] {
 .departure {
     margin-bottom: 28px;
     position: relative;
-    display:flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
     align-items: center
 }
 
@@ -302,6 +315,7 @@ input[type=number] {
     border: 2px solid #f3f3f3;
     background-color: #f3f3f3;
     width: 346px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-left: auto;
     font-weight: bold;
@@ -343,7 +357,9 @@ input[type=number] {
 }
 
 .amount {
-    display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 }
 
 .adults__amount label {
@@ -352,7 +368,9 @@ input[type=number] {
 
 .children__amount,
 .adults__amount {
-    display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -423,7 +441,9 @@ input[type=number] {
     z-index: 3;
     height:125px;
     background-color: rgba(255, 255, 255, 0.9);
-    display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
     align-items: center;
 }
 
@@ -441,7 +461,9 @@ input[type=number] {
 
 .social__list{
     list-style: none;
-    display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
     margin-left: 256px;
     padding: 0;
 }
@@ -532,14 +554,15 @@ input[type=number] {
 /*СТИЛИ ФОРМЫ*/
 
 .hotel-filters__form {
-    display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
     padding: 27px 70px 12px;
 }
 
 .hotel-filters__form fieldset:first-child {
     margin-right: 120px;
 }
-
 
 .hotel-filters__section {
     border: 0;
@@ -588,7 +611,6 @@ input[type=number] {
     padding-right:13px;
 }
 
-
 .catalog__label input::placeholder{
     color: #ffffff;
 }
@@ -635,6 +657,7 @@ input[type=number] {
     background: #ababab;
     border: 8px solid #ffffff;
     border-radius: 50%;
+    -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
 }
@@ -655,7 +678,9 @@ input[type=number] {
     position: relative;
     text-align: left;
     margin-bottom: 23px;
-    display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
     align-items: center;
     padding-left: 30px;
 }
@@ -725,12 +750,16 @@ input[type=number] {
 
 .hotel-sort__list {
     width: 848px;
-    display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
     padding: 0;
 }
 
 .hotel__selected {
-    display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     margin: 17px auto;
@@ -824,7 +853,9 @@ input[type=number] {
 }
 
 .hotels__item {
-    display: flex; 
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
     padding-top: 29px;
     padding-bottom: 18px;
     padding-right: 72px;
@@ -858,7 +889,9 @@ input[type=number] {
 }
 
 .hotel__item-text {
-    display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
     width: 182px;
     margin-bottom: 12px;
     margin-top: 11px;
@@ -959,4 +992,30 @@ input[type=number] {
 
 .form-bounce {
     animation: bounce 2s;
+}
+
+@keyframes shake {
+	0%,
+	100% {
+	  transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+	  transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60%,
+	80% {
+	  transform: translateX(10px);
+	}
+}
+
+.form-error {
+	animation: shake 3s;
 }
